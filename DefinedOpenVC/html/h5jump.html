@@ -52,7 +52,7 @@
 				    var config = {
 				        /*scheme:必须*/
 				        scheme_IOS: schemeIOS === null ? "yuekaihua://yuekaihua.com?params={'type':'1','controll':'TestViewController','params':{'type':'1','entity':{'UserEntity_userInfo':{'birthday':'1988-09-09','name':'hahaha'}}}}" : schemeIOS,
-				        scheme_Adr: schemeAdr === null ? "jiefangqu://jiefangqu.com/openApp" : schemeAdr,
+				        scheme_Adr: schemeAdr === null ? "yuekaihua://yuekaihua/openApp" : schemeAdr,
 				    };
 					var scheme = ua.indexOf('os') > 0 ? config.scheme_IOS : config.scheme_Adr;
 		        		OpenAppBySchema(scheme);
