@@ -46,7 +46,7 @@
 				
 				//ios safari调起app页面
 		        $(".safariBtn").on("click",function(){
-			        	var ua = navigator.userAgent.toLowerCase();
+                    var ua = navigator.userAgent.toLowerCase();
 				    var schemeIOS = getUrlParam('schemeIOS');
 				    var schemeAdr = getUrlParam('schemeAdr');
 				    var config = {
@@ -82,7 +82,6 @@
 			}
 		    
 		    function OpenAppBySchema(scheme) {
-		    		var startTime = Date.now();
 			    var ua = navigator.userAgent.toLowerCase();    
 			    if (ua.indexOf('safari') > -1 && (ua.indexOf('os 8') == -1
 			        || ua.indexOf('os 7') == -1
